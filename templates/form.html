@@ -1,0 +1,59 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="CustomerID">CustomerID:</label>
+        <input type="text" id="CustomerID" name="CustomerID" placeholder="Enter CustomerID (int)">
+    </div>
+
+    <div class="form-group">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" placeholder="Enter Name">
+    </div>
+
+    <div class="form-group">  
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age" placeholder="Enter Age (int)">
+    </div>
+    
+    <div class="form-group">
+        <label for="Subscription_Length_Months">Subscription_Length_Months:</label>
+        <input type="text" id="Subscription_Length_Months" name="Subscription_Length_Months" placeholder="Enter Subscription_Length_Months (int)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Monthly_Bill">Monthly_Bill:</label>
+        <input type="text" id="Monthly_Bill" name="Monthly_Bill" placeholder="Enter Monthly_Bill (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Total_Usage_GB">Total_Usage_GB:</label>
+        <input type="text" id="Total_Usage_GB" name="Total_Usage_GB" placeholder="Enter Total_Usage_GB (float)">
+    </div>         
+  
+<div class="form-group">
+  <label for="Gender">Gender:</label>
+  <select id="Gender" name="Gender">
+    <option value="Female">Female</option>
+    <option value="Male">Male</option>
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="Location">Location:</label>
+  <select id="Location" name="Location">
+    <option value="Houston">Houston</option>
+    <option value="Chicago">Chicago</option>
+    <option value="Miami">Miami</option>
+    <option value="Los Angeles">Los Angeles</option>
+    <option value="New York">New York</option>
+  </select>
+</div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+
+{{final_result}}
+</body>
+</html>
